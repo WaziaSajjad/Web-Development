@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #ca84f5; */
+    background-color: #b25be9;
+    color: rgb(100, 24, 96);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: rgb(71, 0, 146);
+    margin-bottom: 30px;
+}
+
+.icon {
+    color: #27ae60;
+    font-size: 2.5rem;
+}
+
+.timer {
+    font-size: 2rem;
+    line-height: 2.5;
+}
+
+.timer div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#minute, #second, #millisecond {
+    color: #bbb;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+#startBtn {
+    background-color: #873c96;
+    color: white;
+}
+
+#pauseBtn {
+    background-color: #761987;
+    color: white;
+}
+
+#resetBtn {
+    background-color: #5f0474;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}

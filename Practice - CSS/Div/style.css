@@ -1,0 +1,19 @@
+#d1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(197, 197, 238);
+    color: teal;
+}
+#d2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: -50px;
+    margin-left: 30px;
+    color: tomato;
+    opacity: 0.5;
+}
+/* 
+padding is used to insert space from borders to material inside
+fro example, in input="text" would increase the space between the text and the border of the box
+margins adds space outside the element */
