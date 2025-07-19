@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Add Questions Screen -->
+    <div id="addScreen">
+      <h2>Add Question</h2>
+      <input id="questionInput" placeholder="Enter question" />
+      <input class="optionInput" placeholder="Option 1" />
+      <input class="optionInput" placeholder="Option 2" />
+      <input class="optionInput" placeholder="Option 3" />
+      <input class="optionInput" placeholder="Option 4" />
+      <select id="correctOptionIndex">
+        <option value="0">Correct: Option 1</option>
+        <option value="1">Correct: Option 2</option>
+        <option value="2">Correct: Option 3</option>
+        <option value="3">Correct: Option 4</option>
+      </select>
+      <button onclick="addQuestion()">Add Question</button>
+      <button onclick="goToQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizScreen" class="hidden">
+      <h3>Question <span id="currentQuestion">1</span> / <span id="totalQuestions">0</span></h3>
+      <h1 id="displayQuestion">Question will appear here</h1>
+      <div id="options"></div>
+    </div>
+
+    <div id="resultScreen" class="hidden">
+      <h2>Quiz Completed</h2>
+      <p id="scoreText">You scored X out of Y</p>
+      <div class="button-group">
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <button onclick="goToAddScreen()">Create Another Quiz</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="customAlert" class="hidden">
+    <span id="alertText">This is an alert!</span>
+    <button onclick="closeAlert()">X</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
