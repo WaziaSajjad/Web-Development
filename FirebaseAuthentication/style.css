@@ -1,0 +1,45 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background: #D2C1B6;
+}
+nav{
+    display: flex;
+    background: #1B3C53;
+    list-style-type: none;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+a{
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: none;
+}
+.sign-up,
+.log-in,
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 50px 30px;
+    background: #F9F3EF;
+}
+/* .log-in{
+    background: #F9F3EF;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+} */
+#submit,
+#login-btn,
+#signup-btn {
+    padding: 15px;
+    background: #456882;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+}
+/* .container{
+
+} */
